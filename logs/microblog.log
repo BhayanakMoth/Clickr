@@ -1,0 +1,92 @@
+2019-10-11 09:50:47,293 ERROR: Exception on /file-upload [POST] [in /home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py:1780]
+Traceback (most recent call last):
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pratyush/workspace/microblog/app/routes.py", line 198, in file_upload
+    return redirect(url_for('uploads'))
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2080, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/helpers.py", line 345, in url_for
+    force_external=external)
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/werkzeug/routing.py", line 2007, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'uploads'. Did you mean 'file_upload' instead?
+2019-10-11 09:52:57,385 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 09:53:02,123 ERROR: Exception on /file-upload [POST] [in /home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py:1780]
+Traceback (most recent call last):
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pratyush/workspace/microblog/app/routes.py", line 198, in file_upload
+    return redirect(url_for('file-upload'))
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2080, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/helpers.py", line 345, in url_for
+    force_external=external)
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/werkzeug/routing.py", line 2007, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'file-upload'. Did you mean 'file_upload' instead?
+2019-10-11 09:53:20,834 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 09:58:15,671 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 09:58:22,933 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 09:58:44,148 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 09:58:53,407 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 09:59:33,965 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 10:01:11,557 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 10:01:16,668 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 10:03:23,567 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 10:03:32,949 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 10:03:38,645 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 10:03:45,008 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 10:03:52,185 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 10:04:01,401 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 10:06:31,998 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 10:12:14,013 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 10:12:26,843 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 10:12:37,723 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 10:12:50,708 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 10:17:29,637 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 10:18:21,130 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-11-02 14:16:36,315 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-02 14:16:47,035 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-02 14:18:49,981 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-02 14:19:03,190 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 10:55:13,987 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 10:55:53,654 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 10:57:49,498 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 10:58:42,935 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 10:59:55,208 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 11:01:30,255 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 11:06:38,119 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 11:07:32,685 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 11:08:35,860 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 11:09:19,087 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 11:13:04,118 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 11:14:14,024 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]

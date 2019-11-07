@@ -1,0 +1,117 @@
+2019-11-06 12:00:20,455 ERROR: Exception on /index [GET] [in c:\program files\python36\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\program files\python36\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\program files\python36\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\program files\python36\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python36\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\program files\python36\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\program files\python36\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\program files\python36\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Clikr\microblog2\app\routes.py", line 43, in index
+    prev_url=prev_url)
+  File "c:\program files\python36\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "c:\program files\python36\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\program files\python36\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\program files\python36\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\program files\python36\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python36\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Clikr\microblog2\app\templates\index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "C:\Clikr\microblog2\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "c:\program files\python36\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "c:\program files\python36\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "c:\program files\python36\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "c:\program files\python36\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block "body"
+    {% block navbar %}
+  File "C:\Clikr\microblog2\app\templates\base.html", line 32, in block "navbar"
+    <li><a href="{{ url_for('Editor') }}">Editor</a> </li>
+  File "c:\program files\python36\lib\site-packages\flask\helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "c:\program files\python36\lib\site-packages\flask\app.py", line 2215, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python36\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\program files\python36\lib\site-packages\flask\helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "c:\program files\python36\lib\site-packages\werkzeug\routing.py", line 2020, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'Editor'. Did you mean 'editor' instead?
+2019-11-06 12:00:47,058 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 12:04:39,580 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 12:09:44,783 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 12:11:46,108 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 12:14:17,325 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 12:14:45,673 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 12:15:22,561 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 13:52:49,797 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 14:25:41,811 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 14:26:26,592 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 14:26:58,910 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 14:27:23,798 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 14:29:22,019 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 14:32:05,439 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 14:34:37,441 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 14:41:35,860 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 15:00:21,482 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 15:00:28,612 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 15:02:09,782 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 15:07:24,441 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 15:08:14,285 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 15:12:09,513 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 15:12:57,987 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 15:19:11,339 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 15:20:11,345 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 15:25:03,046 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 15:25:13,737 ERROR: Exception on /photo-editor [POST] [in c:\program files\python36\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\program files\python36\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\program files\python36\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\program files\python36\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python36\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\program files\python36\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\program files\python36\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Clikr\microblog2\app\routes.py", line 218, in editor
+    id = random_id(5)
+  File "C:\Clikr\microblog2\app\routes.py", line 210, in random_id
+    id += random.choice(number)
+NameError: name 'random' is not defined
+2019-11-06 15:26:22,933 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 15:27:13,746 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 15:27:37,515 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 15:29:26,427 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 15:42:55,915 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 15:44:14,424 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-07 13:45:05,529 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-07 13:46:13,411 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-07 13:50:44,959 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-07 13:51:20,346 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-07 13:56:47,463 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-07 13:59:50,501 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-07 14:04:45,264 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-07 14:15:31,705 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-07 14:16:13,461 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-07 14:16:47,359 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-07 14:17:16,178 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]

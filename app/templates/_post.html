@@ -1,0 +1,30 @@
+    <table class="table table-hover bg-dark">
+
+        <tr>
+            <td width="70px" style="font-family: 'Raleway',sans-serif;">
+                <a href="{{ url_for('user', username=post.author.username) }}">
+                    <img src="{{ post.author.avatar(100) }}" />
+                </a>
+                <a href="{{ url_for('user', username=post.author.username) }}">
+                     {{ post.author.username }}       
+                </a>
+                
+            </td>
+            {% if post.hasImage == 0 %}
+            <td>
+                says:
+                <br>
+                {{ post.body }}
+            </td>
+            {% endif %}
+            {% if post.hasImage == 1 %}
+            <td>
+            
+            <div>
+                
+                <img src="{{ url_for('static',filename=post.content) }}" style="width:50vw" >
+            </div>
+            </td>
+            {% endif %}
+        </tr>
+    </table>

@@ -1,0 +1,88 @@
+2019-07-01 23:16:11,750 INFO Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:43]
+2019-07-01 23:16:26,819 ERROR Exception on /edit_profile [POST] [in /home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py:1780]
+Traceback (most recent call last):
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1835, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1850, in finalize_request
+    response = self.make_response(rv)
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1976, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2019-07-01 23:17:43,649 INFO Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:43]
+2019-07-01 23:18:06,954 ERROR Exception on /edit_profile [POST] [in /home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py:1780]
+Traceback (most recent call last):
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1835, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1850, in finalize_request
+    response = self.make_response(rv)
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1976, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2019-07-21 17:59:15,756 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:45]
+2019-07-21 17:59:42,741 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:45]
+2019-07-21 18:00:20,706 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-07-21 18:01:47,386 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-07-26 00:05:29,646 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-08-11 19:02:37,157 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-08-11 19:31:52,947 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 08:53:35,406 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 09:33:30,949 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 09:33:51,603 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 09:34:18,966 ERROR: Exception on /file-upload [GET] [in /home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py:1780]
+Traceback (most recent call last):
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pratyush/workspace/microblog/app/routes.py", line 192, in file_upload
+    return render_template('file-upload.html')
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/pratyush/workspace/microblog/app/templates/file-upload.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/home/pratyush/workspace/microblog/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+    {% block body -%}
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
+    {% block content -%}
+  File "/home/pratyush/workspace/microblog/app/templates/base.html", line 48, in block "content"
+    {% block app_content %}{% endblock %}
+  File "/home/pratyush/workspace/microblog/app/templates/file-upload.html", line 9, in block "app_content"
+    {{ wtf.quick_form(form) }}
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/jinja2/runtime.py", line 579, in _invoke
+    rv = self._func(*arguments)
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/wtf.html", line 200, in template
+    {{ form.hidden_tag() }}
+  File "/home/pratyush/workspace/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2019-10-11 09:35:11,299 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 09:44:13,495 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]
+2019-10-11 09:44:59,894 INFO: Microblog startup [in /home/pratyush/workspace/microblog/app/__init__.py:47]

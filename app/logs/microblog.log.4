@@ -1,0 +1,68 @@
+2019-11-02 14:15:58,783 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-02 14:16:25,204 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 11:16:07,077 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 11:21:57,516 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 11:31:10,966 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 11:31:13,715 ERROR: Exception on /explore [GET] [in c:\program files\python36\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\program files\python36\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\program files\python36\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\program files\python36\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python36\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\program files\python36\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\program files\python36\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\program files\python36\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Clikr\microblog2\app\routes.py", line 57, in explore
+    next_url=next_url, prev_url=prev_url)
+  File "c:\program files\python36\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "c:\program files\python36\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\program files\python36\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\program files\python36\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\program files\python36\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python36\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Clikr\microblog2\app\templates\base.html", line 8, in template
+    {% endblock}
+  File "c:\program files\python36\lib\site-packages\jinja2\environment.py", line 1005, in render
+    return concat(self.root_render_func(self.new_context(vars)))
+  File "C:\Clikr\microblog2\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "c:\program files\python36\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\program files\python36\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Clikr\microblog2\app\templates\base.html", line 8, in template
+    {% endblock}
+  File "c:\program files\python36\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "c:\program files\python36\lib\site-packages\jinja2\parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "c:\program files\python36\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "c:\program files\python36\lib\site-packages\jinja2\parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "c:\program files\python36\lib\site-packages\jinja2\parser.py", line 268, in parse_block
+    node.body = self.parse_statements(('name:endblock',), drop_needle=True)
+  File "c:\program files\python36\lib\site-packages\jinja2\parser.py", line 173, in parse_statements
+    next(self.stream)
+  File "c:\program files\python36\lib\site-packages\jinja2\lexer.py", line 359, in __next__
+    self.current = next(self._iter)
+  File "c:\program files\python36\lib\site-packages\jinja2\lexer.py", line 562, in wrap
+    for lineno, token, value in stream:
+  File "c:\program files\python36\lib\site-packages\jinja2\lexer.py", line 683, in tokeniter
+    filename)
+jinja2.exceptions.TemplateSyntaxError: unexpected '}'
+2019-11-06 11:32:24,911 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
+2019-11-06 11:33:46,169 INFO: Microblog startup [in C:\Clikr\microblog2\app\__init__.py:47]
